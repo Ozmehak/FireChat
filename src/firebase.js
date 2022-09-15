@@ -6,19 +6,12 @@ import { getFirestore } from "firebase/firestore";
 
 
 const firebaseConfig = {
-
-    apiKey: "AIzaSyADvwWE1P_Sw17_d_8W442yjCLXZ53Mbjg",
-
+    apiKey: process.env.REACT_APP_FIREBASE_KEY,
     authDomain: "firechat-285f2.firebaseapp.com",
-
     projectId: "firechat-285f2",
-
     storageBucket: "firechat-285f2.appspot.com",
-
     messagingSenderId: "250841161815",
-
     appId: "1:250841161815:web:99340191a0189ce3ce4312"
-
 };
 
 

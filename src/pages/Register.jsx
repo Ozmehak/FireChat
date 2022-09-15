@@ -6,6 +6,7 @@ import { doc, setDoc } from "firebase/firestore";
 import { useNavigate, Link } from "react-router-dom"
 import {useState} from "react";
 
+
 export const Register = () => {
 
     const [err, setErr] = useState(false)
