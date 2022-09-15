@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import {Message} from "./Message";
+import {Messages} from "./Messages";
 import {Input} from "./Input";
 import {ChatContext} from "../context/ChatContext";
 
@@ -16,7 +16,7 @@ export const Chat = () => {
                     <img alt={"test"}/>
                 </div>
             </div>
-            <Message />
+            <Messages />
             <Input />
         </div>
     );
