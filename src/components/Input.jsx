@@ -74,7 +74,7 @@ export const Input = () => {
                 value={text}
             />
             <div className="send">
-                <img />
+                <img alt={"test"}/>
                 <input
                     type="file"
                     style={{display:"none"}}
@@ -82,7 +82,7 @@ export const Input = () => {
                     onChange={(e) => setImg(e.target.files[0])}
                 />
                 <label htmlFor="file">
-                    <img />
+                    <img alt={"test"}/>
                 </label>
                 <button onClick={handleSend}>Send</button>
             </div>
