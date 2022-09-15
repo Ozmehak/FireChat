@@ -108,17 +108,17 @@
 
     .sidebar {
       flex: 1;
-      background-color: #3e3c61;
+      background-color: #818589;
       position: relative;
 
       .navbar {
         display: flex;
         align-items: center;
-        background-color: #2f2d52;
+        background-color: #C0C0C0;
         height: 50px;
         padding: 10px;
         justify-content: space-between;
-        color: #ddddf7;
+        color: black;
 
         .logo {
           font-weight: bold;
@@ -153,7 +153,7 @@
         }
       }
       .search {
-        border-bottom: 1px solid gray;
+        border-bottom: 1px solid whitesmoke;
 
         .searchForm {
           padding: 10px;
@@ -165,7 +165,7 @@
             outline: none;
 
             &::placeholder {
-              color: lightgray;
+              color: black;
             }
           }
         }
@@ -180,7 +180,7 @@
         cursor: pointer;
 
         &:hover {
-          background-color: #2f2d52;
+          background-color: black;
         }
 
         img {
@@ -207,12 +207,13 @@
 
       .chatInfo {
         height: 50px;
-        background-color: #5d5b8d;
+        background-color: #C0C0C0;
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 10px;
-        color: lightgray;
+        color: black;
+        border-left: 1px solid white;
       }
 
       .chatIcons {
@@ -226,7 +227,7 @@
       }
 
       .messages {
-        background-color: #ddddf7;
+        background-color: #f5f5f5;
         padding: 10px;
         height: calc(100% - 160px);
         overflow: scroll;
@@ -298,7 +299,7 @@
           font-size: 18px;
 
           &::placeholder {
-            color: lightgray;
+            color: black;
           }
         }
 
@@ -316,8 +317,13 @@
             border: none;
             padding: 10px 15px;
             color: white;
-            background-color: #8da4f1;
+            background-color: black;
+            border-radius: 10px;
             cursor: pointer;
+
+            &:hover {
+              background-color: #282c34;
+            }
           }
         }
       }

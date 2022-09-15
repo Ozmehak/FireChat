@@ -5,6 +5,7 @@ import {getDownloadURL, ref, uploadBytesResumable} from "firebase/storage";
 import { arrayUnion, doc, serverTimestamp, Timestamp, updateDoc } from "firebase/firestore"
 import { db, storage } from "../firebase"
 import {v4 as uuid} from "uuid"
+import {ImageAdd} from '@styled-icons/boxicons-regular'
 
 
 
@@ -74,7 +75,6 @@ export const Input = () => {
                 value={text}
             />
             <div className="send">
-                <img alt={"test"}/>
                 <input
                     type="file"
                     style={{display:"none"}}
@@ -82,7 +82,7 @@ export const Input = () => {
                     onChange={(e) => setImg(e.target.files[0])}
                 />
                 <label htmlFor="file">
-                    <img alt={"test"}/>
+                    <ImageAdd size="32" />
                 </label>
                 <button onClick={handleSend}>Send</button>
             </div>

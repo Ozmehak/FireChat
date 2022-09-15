@@ -12,6 +12,9 @@ export const Message = ({ message }) => {
         ref.current?.scrollIntoView({ behavior: "smooth" })
     }, [message])
 
+    let timeStamp = new Date()
+
+
     return (
         <div
             ref={ref}
@@ -25,11 +28,13 @@ export const Message = ({ message }) => {
                 }
                 alt=""
                 />
-                <span>just now</span>
+                <span>{timeStamp.getHours().toString()}:{timeStamp.getMinutes().toString()}:{timeStamp.getSeconds().toString()}</span>
+
             </div>
             <div className="messageContent">
                 <p>{message.text}</p>
                 {message.img && <img src={message.img} alt="" /> }
+
             </div>
         </div>
     )
